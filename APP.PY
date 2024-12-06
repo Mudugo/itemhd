@@ -53,4 +53,4 @@ def index():
     return render_template('index.html', status_types=status_types, items=submitted_items, average_efficiency=average_efficiency)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
